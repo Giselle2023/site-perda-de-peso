@@ -8,26 +8,87 @@
     <title>Calculadora de perda de gordura</title>
 </head>
 <body>
-    <aside>
-        <img src="src/img/img.svg" alt="img-person-eating-apple">
-    </aside>
+    <header>
+        <ul>
+            <li class="active"><a href="#">Imc</a></li>
+            <li><a href="#">Gasto calorico</a></li>
+            <li><a href="#">Calculo para perde peso</a></li>
+            <li><a href="#">Agua</a></li>
+        </ul>
+    </header>
     <hr>
     <section>
+        <div class="container">
+            <h1>Calcular Imc</h1>
+            <div class="observation">
+                <p>Um Imc saúdavel varia entre <strong>18.5</strong> a <strong>24.9</strong></p>
+            </div>
+            <div>
+                <div>
+                    <input id="altura" type="text" placeholder="altura: ex1.65">
+                    <input id="peso" type="text" placeholder="peso ex58">
+                </div>
+                <button id="btn-imc">Calcular</button>
+            </div>
+            <p id="res-imc"></p>
+          </div>
+
+          <div class="container">
+            <h1>Calcular gasto calórico</h1>
+            <div class="observation">
+                <p>Quanto seu corpo gasta de energia apenas para manter você vivo</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <input id="mas" type="radio" name="sex">
+                        <label for="mas">Homem</label>
+                        <input type="radio" name="sex">
+                        <label for="fem">Mulher</label>
+                    </div>
+                    <input id="idade" type="text" placeholder="idade">
+                    <input id="peso-em-kg" type="text" placeholder="peso ex58">
+                </div>
+                <button id="btn-gasto-calorico">Calcular</button>
+            </div>
+            <p id="res-gasto-calorico"></p>
+          </div>
+          
       <div class="container">
         <h1>Calcular perda de gordura</h1>
         <div class="observation">
-            <p>Para uma perda saudavel o indicado é um deficit de 500 a 600 Kcal por dia</p>
+            <p>Para uma perda saudavel o indicado é um deficit de <strong>500</strong> a <strong>600 Kcal</strong> por dia!</p>
         </div>
         <div>
             <div>
                 <input id="deficit" type="text" placeholder="Deficit por dia: ex500">
                 <input id="days" type="text" placeholder="Dias: ex14">
             </div>
-            <button>Calcular</button>
+            <button id="btn-perde-peso">Calcular</button>
         </div>
-        <p id="res"></p>
+        <p id="res-perde-peso"></p>
       </div>
+
+      <div class="container">
+        <h1>Calcular necessidade de aguá</h1>
+        <div class="observation">
+            <p>Mais de 70% do corpo humano é composto de água. Ela ajuda a hidratar, transportar nutrientes até as células e auxilia na eliminação de toxinas do corpo através do suor e da urina.</p>
+        </div>
+        <div>
+            <div>
+                <input id="peso-agua" type="text" placeholder="peso ex58">
+            </div>
+            <button id="btn-agua">Calcular</button>
+        </div>
+        <p id="res-agua"></p>
+      </div>
+
     </section>
+    <footer>
+        <a href="#">gitHub</a>
+        <a href="#">linkedin</a>
+
+    </footer>
     <script src="src/js.js"></script>
 </body>
 </html>

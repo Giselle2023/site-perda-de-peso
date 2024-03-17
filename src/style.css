@@ -3,40 +3,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 :root{
     --secundaryColor:rgb(255, 200, 0);
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
     width: 100vw;
     height: 100vh;
-   
     font-family: "Poppins", sans-serif;
 }
-aside{
-    width:45%;
-  
+header{
+    padding: 1rem;
 }
-aside img{
-    width: 490px;
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li a{
+    color: black;
+    font-weight: 500;
+}
+header ul li a:active{
+    border-bottom: 2px solid var(--secundaryColor);
 }
 hr{
-    height: 100%;
+    width: 100%;
+    border: .9px solid rgba(128, 128, 128, 0.219);
+    margin-bottom: 4rem;
 }
 section{
     display: flex;
     flex-direction: column;
-   /* background-color: rgba(255, 167, 96, 0.645); */
     height: 100%;
-    width: 55%;
+    width:70%;
     box-sizing: border-box;
     padding: 1rem;
+    margin: auto;
+    gap: 10rem;
 }
 .container{
-    margin: auto;
     gap: 2rem;
     display: flex;
     flex-direction: column;
@@ -53,6 +61,7 @@ input{
     border-radius: 5px;
     border: none;
     padding: .8rem;
+    background-color: rgba(128, 128, 128, 0.113);
 }
 button{
     cursor: pointer;
@@ -63,6 +72,11 @@ button{
     width: 42%;
     padding: .8rem 0;
 
+}
+
+footer{
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (max-width:1100px){
