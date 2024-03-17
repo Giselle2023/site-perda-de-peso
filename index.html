@@ -9,16 +9,16 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li class="active"><a href="#">Imc</a></li>
-            <li><a href="#">Gasto calorico</a></li>
-            <li><a href="#">Calculo para perde peso</a></li>
-            <li><a href="#">Agua</a></li>
+        <ul class="nav-item">
+            <li class="active"><a href="#container-imc">Imc</a></li>
+            <li><a href="#container-tmb">TMB</a></li>
+            <li><a href="#container-perder-peso">Calculo para perde peso</a></li>
+            <li><a href="#container-agua">Água</a></li>
         </ul>
     </header>
     <hr>
     <section>
-        <div class="container">
+        <div id="container-imc" class="container">
             <h1>Calcular Imc</h1>
             <div class="observation">
                 <p>Um Imc saúdavel varia entre <strong>18.5</strong> a <strong>24.9</strong></p>
@@ -33,18 +33,28 @@
             <p id="res-imc"></p>
           </div>
 
-          <div class="container">
-            <h1>Calcular gasto calórico</h1>
+          <div id="container-tmb" class="container">
+            <h1>Calcular taxa metabolismo basal (TMB)</h1>
             <div class="observation">
                 <p>Quanto seu corpo gasta de energia apenas para manter você vivo</p>
             </div>
             <div>
                 <div>
-                    <div>
+                    <div class="container-info-sexo">
                         <input id="mas" type="radio" name="sex">
                         <label for="mas">Homem</label>
                         <input type="radio" name="sex">
                         <label for="fem">Mulher</label>
+                    </div>
+                    <div class="nivelDeAtividade">
+                        <input type="radio" name="nivel-de-atividade" id="">
+                        <label for="">Sedentário</label>
+                        <input type="radio" name="nivel-de-atividade" id="">
+                        <label for="">Levemente ativo</label>
+                        <input type="radio" name="nivel-de-atividade" id="">
+                        <label for="">Moderado</label>
+                        <input type="radio" name="nivel-de-atividade" id="">
+                        <label for="">Muito ativo</label>
                     </div>
                     <input id="idade" type="text" placeholder="idade">
                     <input id="peso-em-kg" type="text" placeholder="peso ex58">
@@ -54,7 +64,7 @@
             <p id="res-gasto-calorico"></p>
           </div>
           
-      <div class="container">
+      <div id="container-perder-peso" class="container">
         <h1>Calcular perda de gordura</h1>
         <div class="observation">
             <p>Para uma perda saudavel o indicado é um deficit de <strong>500</strong> a <strong>600 Kcal</strong> por dia!</p>
@@ -69,7 +79,7 @@
         <p id="res-perde-peso"></p>
       </div>
 
-      <div class="container">
+      <div id="container-agua" class="container">
         <h1>Calcular necessidade de aguá</h1>
         <div class="observation">
             <p>Mais de 70% do corpo humano é composto de água. Ela ajuda a hidratar, transportar nutrientes até as células e auxilia na eliminação de toxinas do corpo através do suor e da urina.</p>
@@ -85,8 +95,8 @@
 
     </section>
     <footer>
-        <a href="#">gitHub</a>
-        <a href="#">linkedin</a>
+        <a href="https://github.com/Giselle2023">gitHub</a>
+        <a href="https://www.linkedin.com/in/gisellecristina2004/">linkedin</a>
 
     </footer>
     <script src="src/js.js"></script>
